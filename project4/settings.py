@@ -32,9 +32,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-petersvk1-sdffs-ztctkc8h14h.ws.codeinstitute-ide.net',".herokuapp.com"]
+ALLOWED_HOSTS = ['8000-petersvk1-sdffs-ztctkc8h14h.ws.codeinstitute-ide.net','.herokuapp.com']
 
-
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 # Application definition
 
 INSTALLED_APPS = [
